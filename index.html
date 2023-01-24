@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Авторизация пользователя</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <section id="auth">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="section_img">
+                        <img src="image/Cat.jpg" alt="Cat">
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="section_title">
+                        <h1>Welcome to lorem..!</h1>
+                    </div>
+                    <div class="section_switch">
+                        <input type="radio" name="select" id="switch-1" checked>
+                        <label for="switch-1" class="switch switch-1">
+                            <span>Login</span>
+                        </label>
+                        <input type="radio" name="select" id="switch-2">
+                        <label for="switch-2" class="switch switch-2">
+                            <span>Register</span>
+                        </label>
+                    </div>
+                    <div class="section_desc">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="section_form">
+                        <form action="login/index.php" id="loginForm" class="form_wrapper" status_check="switch-1">
+                            <div class="form_item">
+                                <label for="username">User name</label>
+                                <input type="text" name="username" id="username" placeholder="Enter your User name" required>
+                            </div>
+                            <div class="form_item pass">
+                                <label for="password">Password</label>
+                                <div class="password_wrapper">
+                                    <input type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="current-password" minlength="6"
+                                    maxlength="20" size="20" pattern="[0-9a-fA-F]{6,20}" required>
+                                    <div class="showPass_wrapper">
+                                        <input type="checkbox" id="showPass_login">
+                                        <label for="showPass_login">
+                                            <img src="image/eye.svg" alt="show">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <a href="#" class="forgot_btn">Forgot Password?</a>
+                            </div>
+                            <button type="submit" id="login">Login</button>
+                        </form>
+                        <form action="register/index.php" id="registerForm" class="form_wrapper hidden" status_check="switch-2">
+                            <div class="form_item">
+                                <label for="email">Email Address</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your Email Address" required>
+                            </div>
+                            <div class="form_item">
+                                <label for="username">User name</label>
+                                <input type="text" name="username" id="username" placeholder="Enter your User name" required>
+                            </div>
+                            <div class="form_item pass">
+                                <label for="password">Password</label>
+                                <div class="password_wrapper">
+                                    <input type="password" name="password" id="password" placeholder="Enter your Password" autocomplete="new-password" minlength="6"
+                                    maxlength="20" size="20" pattern="[0-9a-fA-F]{6,20}" required>
+                                    <div class="showPass_wrapper">
+                                        <input type="checkbox" id="showPass_reg">
+                                        <label for="showPass_reg">
+                                            <img src="image/eye.svg" alt="show">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_item">
+                                <a href="#" class="forgot_btn">Forgot Password?</a>
+                            </div>
+                            <button type="submit" id="login">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

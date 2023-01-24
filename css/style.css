@@ -1,0 +1,191 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+.container{
+    /* width: 1320px;
+    margin: auto; */
+    padding: 0 116px 0 41px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 110px;
+    padding: 38px 0 37px;
+}
+
+section#auth .row{
+    min-height: 100vh;
+}
+
+.col-8 {
+    width: 737px;
+}
+
+.col-4 {
+    width: calc(100% - 847px);
+}
+
+section#auth .row .col-4 {
+    align-self: center;
+}
+
+.section_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 29px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section_img:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(151, 118, 68, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%);
+}
+
+.section_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section_title h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.section_switch {
+    text-align: center;
+    display: flex;
+    padding: 10px 13px 9px 13px;
+    background: #F8EDDD;
+    border-radius: 33px;
+    width: fit-content;
+    margin: 24px auto 0;
+}
+
+.section_switch input[type="radio"]{
+    display: none;
+}
+
+label.switch {
+    padding: 8px 52px 8px 51px;
+    display: block;
+    cursor: pointer;
+    color: #9E896A;
+}
+
+#switch-1:checked:checked ~ .switch-1,
+#switch-2:checked:checked ~ .switch-2{
+    background: #9E896A;
+    border-radius: 33px;
+}
+
+#switch-1:checked:checked ~ .switch-1 span,
+#switch-2:checked:checked ~ .switch-2 span{
+  color: #fff;
+}
+
+.section_desc {
+    margin-top: 52px;
+}
+
+.section_form {
+    margin-top: 42px;
+}
+
+.form_wrapper.hidden {
+    display: none;
+}
+
+.form_wrapper input, .form_wrapper label {
+    display: block;
+    width: 100%;
+}
+
+.form_item {
+    margin-bottom: 30px;
+}
+
+.form_item label {
+    margin-bottom: 12px;
+}
+
+.form_item input {
+    background: #FFFFFF;
+    border: 1px solid #9E896A;
+    border-radius: 40px;
+    padding: 15px 31px 16px;
+}
+
+.password_wrapper {
+    position: relative;
+}
+
+.showPass_wrapper {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: fit-content;
+    transform: translateY(-50%);
+}
+
+.showPass_wrapper input {
+    display: none;
+}
+
+.showPass_wrapper label {
+    margin: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.showPass_wrapper label img {
+    width: 20px;
+}
+
+.form_item a {
+    display: block;
+    text-align: right;
+    color: #000;
+    text-decoration: none;
+    margin-top: -8px;
+}
+
+button#login {
+    padding: 12px 94px;
+    background: #9E896A;
+    border-radius: 36px;
+    border: none;
+    color: #fff;
+    margin: 62px 0 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+#registerForm button#login {
+    background: #553E19;
+}
