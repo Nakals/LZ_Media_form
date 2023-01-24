@@ -96,12 +96,13 @@ label.switch {
     display: block;
     cursor: pointer;
     color: #9E896A;
+    transition: background .3s ease;
+    border-radius: 33px;
 }
 
 #switch-1:checked:checked ~ .switch-1,
 #switch-2:checked:checked ~ .switch-2{
     background: #9E896A;
-    border-radius: 33px;
 }
 
 #switch-1:checked:checked ~ .switch-1 span,
