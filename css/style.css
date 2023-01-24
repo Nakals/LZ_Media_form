@@ -176,7 +176,7 @@ label.switch {
     margin-top: -8px;
 }
 
-button#login {
+button#login,button#register {
     padding: 12px 94px;
     background: #9E896A;
     border-radius: 36px;
