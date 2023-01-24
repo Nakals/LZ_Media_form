@@ -187,7 +187,7 @@ button#login, button#register {
     cursor: pointer;
 }
 
-#registerForm button#login {
+#registerForm button#register {
     background: #553E19;
 }
 
