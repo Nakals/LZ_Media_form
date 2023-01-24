@@ -36,11 +36,11 @@ section#auth .row{
 }
 
 .col-8 {
-    width: 737px;
+    width: 58%;
 }
 
 .col-4 {
-    width: calc(100% - 847px);
+    width: calc(42% - 110px);
 }
 
 section#auth .row .col-4 {
@@ -188,4 +188,39 @@ button#login {
 
 #registerForm button#login {
     background: #553E19;
+}
+
+@media (max-width: 1280px){
+    .row{
+        gap: 55px;
+    }
+    .col-8 {
+        width: 55%;
+    }
+    
+    .col-4 {
+        width: calc(45% - 55px);
+    }
+}
+
+@media (max-width: 1024px){
+    .col-8{
+        display: flex;
+        align-items: center;
+    }
+    .section_img{
+        height: 80%;
+    }
+}
+
+@media (max-width: 991px){
+    .container{
+        padding: 0 32px 0 26px;
+    }
+    .col-8{
+        display: none;
+    }
+    .col-4 {
+        width: 100%;
+    }
 }
